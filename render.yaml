@@ -1,9 +1,10 @@
 services:
-- type: pserv
+- type: web
   name: mysql
-  plan: standard
+  plan: starter
   env: docker
   autoDeploy: false
+  region: frankfurt
   disk:
     name: mysql
     mountPath: /var/lib/mysql
